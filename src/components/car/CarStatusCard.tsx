@@ -1,15 +1,18 @@
-import CarName from "./CarName";
-import CarNumber from "./CarNumber";
+import { COLOR } from "@/src/types/colors";
+import CarName, { CarNameProps } from "./CarName";
+import CarNumber, { CarNumberProps } from "./CarNumber";
 import Status from "./Status";
 
-const CarStatusCard = () => {
+type CarStatusCardProps = CarNameProps & CarNumberProps;
+
+const CarStatusCard = ({ carName, carNumber, color }: CarStatusCardProps) => {
   return (
-    <article style={{ padding: "20px 24px", display: "flex", flexDirection: "column", gap: "8px" }}>
+    <article style={{ backgroundColor: COLOR.GreenDarkNormal, padding: "20px 24px", display: "flex", flexDirection: "column", gap: "8px" }}>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <CarName color="Black" contents="기아" />
+        <CarName color="Black" carName="기아" />
         <Status status="holding" />
       </div>
-      <CarNumber color="Black" contents="12가4567마" />
+      <CarNumber color="Black" carNumber="12가4567마" />
     </article>
   );
 };
