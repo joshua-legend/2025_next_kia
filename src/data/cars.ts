@@ -1,0 +1,11 @@
+import { CarCardProps } from "../components/car/CarCard";
+
+export const cars: CarCardProps[] = [
+  { carName: "기아", carNumber: "12가1234", status: "completed" },
+  { carName: "모닝", carNumber: "11가1111", status: "holding" },
+  { carName: "셀토스", carNumber: "22가2222", status: "completed" },
+  { carName: "테슬라", carNumber: "12가1777", status: "incompleted" },
+  { carName: "sm3", carNumber: "12가1553", status: "incompleted" },
+  { carName: "sm5", carNumber: "12가2444", status: "holding" },
+  { carName: "sm7", carNumber: "12가5235", status: "completed" },
+];

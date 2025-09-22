@@ -3,7 +3,7 @@ import CarName, { carNameProps } from "./CarName";
 import CarNumber, { CarNumberProps } from "./CarNumber";
 import CarStatus, { CarStatusProps, StatusType } from "./CarStatus";
 
-type CarCardProps = Omit<carNameProps & CarNumberProps & CarStatusProps, "color">;
+export type CarCardProps = Omit<carNameProps & CarNumberProps & CarStatusProps, "color">;
 
 const CarCard = ({ carName, carNumber, status }: CarCardProps) => {
   const carCardObj: Record<StatusType, any> = {
