@@ -4,7 +4,7 @@ import { CSSProperties } from "react";
 
 export type CarNumberProps = {
   carNumber?: string;
-  color: Extract<FullColor, "CoolGrey40" | "Black">;
+  color: Extract<FullColor, "Black" | "CoolGrey40">;
 };
 
 const CarNumber = ({ carNumber = "내용없음", color }: CarNumberProps) => {
