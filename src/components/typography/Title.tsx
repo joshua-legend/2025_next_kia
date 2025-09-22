@@ -1,11 +1,11 @@
-import { COLOR, CoolGreyColor, PrimaryColor, SecondaryColor } from "@/src/types/colors";
+import { COLOR, FullColor } from "@/src/types/colors";
 import { HeaderLevel, TYPOGRAPHY_HEADER } from "@/src/types/typography";
 import { CSSProperties } from "react";
 
 type TitleProps = {
   level: HeaderLevel;
   contents?: string;
-  color: PrimaryColor | SecondaryColor | CoolGreyColor;
+  color: FullColor;
 };
 
 const Title = ({ contents = "내용없음", level, color }: TitleProps) => {

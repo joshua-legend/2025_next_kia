@@ -1,14 +1,13 @@
-import { CoolGreyColor, PrimaryColor, SecondaryColor } from "@/src/types/colors";
+import { FullColor } from "@/src/types/colors";
 import Paragraph from "../typography/Paragraph";
 
-type StatusKR = "완료" | "미완료" | "대기";
 type Status = "completed" | "incompleted" | "holding";
-type StatusKey = {
-  contents: StatusKR;
-  color: PrimaryColor | SecondaryColor | CoolGreyColor;
-};
 type StatusProps = {
   status: Status;
+};
+type StatusKey = {
+  contents: "완료" | "미완료" | "대기";
+  color: FullColor;
 };
 
 const Status = ({ status }: StatusProps) => {

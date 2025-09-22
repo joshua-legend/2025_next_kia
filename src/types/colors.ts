@@ -10,7 +10,9 @@ type CoolGreyTone = "CoolGrey";
 type CoolGreyIntensity = "5" | "10" | "20" | "30" | "40" | "50" | "60" | "70" | "80" | "90";
 export type CoolGreyColor = `${CoolGreyTone}${CoolGreyIntensity}`;
 
-export const COLOR: Partial<Record<PrimaryColor | SecondaryColor | CoolGreyColor, HexColor>> = {
+export type FullColor = PrimaryColor | SecondaryColor | CoolGreyColor;
+
+export const COLOR: Partial<Record<FullColor, HexColor>> = {
   Black: "#05141F",
   White: "#ffffff",
   GreenDefaultNormal: "#5D7D2B",
